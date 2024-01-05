@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import { CSSProvider } from '@master/css.react'
 import config from './master.css'
+import '@master/css';
  
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
