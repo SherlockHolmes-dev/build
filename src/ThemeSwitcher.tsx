@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Icon, InlineIcon } from '@iconify/react';
+import adjustIcon from '@iconify/icons-mdi/brightness-6';
 
 const ThemeSwitcher: React.FC = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -20,12 +22,13 @@ const ThemeSwitcher: React.FC = () => {
   };
 
   return (
-    <div className={'accent-color:blue-46@dark f:gray-100@light f:gray-20@dark bg:fade-20@dark bg:fade-80@light position:fixed top:50% left:50% transform:translate(-50%, -50%) z-index:999'}>
+    <div className="">
       <label>
-        <input type="checkbox" onChange={toggleTheme} />
-        Toggle Theme
+        <input type="checkbox" onChange={toggleTheme} style={{ display: 'none' }} />
+        <div style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer'}}>
+          <Icon icon={adjustIcon} width="1.5em" height="1.5em" />
+        </div>
       </label>
-      <p>This is a sample text</p>
     </div>
   );
 };
