@@ -22,11 +22,11 @@ const ThemeSwitcher: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div className={'f:gray-80@light f:gray-20@dark bg:fade-20@dark bg:fade-80@light position:fixed top:10px right:10px transform:translate(-50%, -50%) z-index:999'}>
       <label>
         <input type="checkbox" onChange={toggleTheme} style={{ display: 'none' }} />
-        <div style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer'}}>
-          <Icon icon={adjustIcon} width="1.5em" height="1.5em" />
+        <div style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer' }}>
+          <Icon icon={adjustIcon} width="1.5em" height="1.5em"/>
         </div>
       </label>
     </div>
