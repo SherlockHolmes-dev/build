@@ -20,8 +20,12 @@ const ThemeSwitcher: React.FC = () => {
   };
 
   return (
-    <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 999 }}>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+    <div className={'accent-color:blue-46@dark f:gray-100@light f:gray-20@dark bg:fade-20@dark bg:fade-80@light position:fixed top:50% left:50% transform:translate(-50%, -50%) z-index:999'}>
+      <label>
+        <input type="checkbox" onChange={toggleTheme} />
+        Toggle Theme
+      </label>
+      <p>This is a sample text</p>
     </div>
   );
 };
